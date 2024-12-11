@@ -100,8 +100,8 @@ func part2(input []string) {
 					case 1:
 						word += string(input[i][j])
 					case 2:
-						xNext := j + (diag[0] * (-1))
-						yNext := i + (diag[1] * (-1))
+						xNext := j + diag[0]*(-1)
+						yNext := i + diag[1]*(-1)
 						word += string(input[yNext][xNext])
 					}
 				}
